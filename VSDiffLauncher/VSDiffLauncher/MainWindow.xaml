@@ -1,0 +1,11 @@
+﻿<Window Drop="container_DragEnter" AllowDrop="True" x:Class="VSDiffLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VS Diff Standby" Height="350" Width="525">
+    <Grid AllowDrop="True" x:Name="container">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock HorizontalAlignment="Center"  x:Name="hintBox" Text="Drag files here." IsHitTestVisible="False"/>
+            <TextBox KeyUp="vsPath_KeyUp" x:Name="vsPath" Visibility="Collapsed"/>
+        </StackPanel>
+    </Grid>
+</Window>
